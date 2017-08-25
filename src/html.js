@@ -1,5 +1,8 @@
 import React from 'react'
 
+import { TypographyStyle } from 'react-typography'
+import typography from './utils/typography'
+
 export default class HTML extends React.Component {
   render() {
     let css
@@ -19,6 +22,7 @@ export default class HTML extends React.Component {
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           {this.props.headComponents}
+          <TypographyStyle typography={typography} />
           {css}
         </head>
         <body>

@@ -3,16 +3,9 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
-import './index.css'
+import Header from '../components/Header'
 
-const Header = () =>
-  <div>
-    <div>
-      <h1>
-        <Link to="/">Gatsby</Link>
-      </h1>
-    </div>
-  </div>
+import '../css/base.css'
 
 const TemplateWrapper = ({ children }) =>
   <div>
@@ -31,9 +24,7 @@ const TemplateWrapper = ({ children }) =>
       ]}
     />
     <Header />
-    <div>
-      {children()}
-    </div>
+    {children()}
   </div>
 
 TemplateWrapper.propTypes = {

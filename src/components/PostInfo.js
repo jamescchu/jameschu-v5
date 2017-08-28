@@ -35,32 +35,32 @@ const Item = styled.li`
 
 const PostInfo = ({ project, role, date, website, description, client, team }) =>
   <Intro>
-    { project &&
+    { project!='na' &&
       <Item header='Project:'>
         {project}
       </Item>
     }
-    { client &&
+    { client!='na' &&
       <Item header='For:'>
         {client}
       </Item>
     }
-    { team &&
+    { team!='na' &&
       <Item header='Team:'>
         {team}
       </Item>
     }
-    { role &&
+    { role!='na' &&
       <Item header='Role:'>
         {role}
       </Item>
     }
-    { date &&
+    { date!='na' &&
       <Item header='Date:'>
         {date}
       </Item>
     }
-    { website &&
+    { website!='na' &&
       <Item header='Website:'>
         {website}
       </Item>

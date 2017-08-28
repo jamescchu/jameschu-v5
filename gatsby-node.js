@@ -17,11 +17,11 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
           id
           fields {
             slug
+            img
           }
           frontmatter {
             date
             title
-            img
           }
         }
       }
@@ -72,10 +72,16 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
     const fileNode = getNode(node.parent);
     const parsedFilePath = path.parse(fileNode.relativePath);
     const slug = `/${parsedFilePath.dir}/`;
+    const img = `/images/${parsedFilePath.dir}.png`;
     createNodeField({
       node,
       name: `slug`,
       value: slug,
+    })
+    createNodeField({
+      node,
+      name: `img`,
+      value: img,
     })
   }
 }

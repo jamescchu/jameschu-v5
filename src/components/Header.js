@@ -2,10 +2,19 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import { rhythm } from '../utils/typography'
+import { media } from '../utils/media'
 
 const Header = styled.header`
   width: ${rhythm(2)};
-  margin: ${rhythm(1 / 2)} 0 ${rhythm(1)} ${rhythm(1)};
+  margin: ${rhythm(1 / 2)} ${rhythm(1)};
+  position: initial;
+  ${media.desktop`
+    position: fixed;
+  `};
+`
+
+const LogoLink = styled(Link)`
+  display: block;
 `
 
 const Logo = () =>
@@ -16,9 +25,10 @@ const Logo = () =>
 
 const SiteHeader = () =>
   <Header>
-    <Link to="/">
+    <LogoLink to="/">
       <Logo />
-    </Link>
+    </LogoLink>
   </Header>
+
 
 export default SiteHeader

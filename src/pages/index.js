@@ -6,20 +6,20 @@ import WorkList from '../components/WorkList'
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark
   return (
-    <section>
+    <div>
       {posts
         .filter(post => post.node.frontmatter.title.length > 0)
         .map(({ node: post }) => {
           return (
             <WorkList
               title={post.frontmatter.title}
-              to={post.frontmatter.path}
+              linkTo={post.fields.slug}
               tags={post.frontmatter.tags}
-              img={post.frontmatter.img}
+              img={post.fields.img}
             />
           )
         })}
-    </section>
+    </div>
   )
 }
 
@@ -37,10 +37,13 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
+          fields {
+            slug
+            img
+          }
           frontmatter {
             title
             tags
-            img
           }
         }
       }

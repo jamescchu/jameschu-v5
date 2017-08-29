@@ -20,14 +20,14 @@ const Header = styled.p`
 
 const Item = styled.li`
   font-size: ${rhythm(1/2)};
-  width: 50%;
+  width: 100%;
   margin: 0;
 
   &::before {
     content: '${props => props.header }';
     font-size: ${rhythm(1/2)};
     font-weight: bold;
-    width: 30%;
+    width: ${rhythm(4)};
     margin: 0;
     float: left;
   }

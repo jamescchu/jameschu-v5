@@ -31,7 +31,11 @@ const NavItem = styled.div`
   width: ${rhythm(3/4)};
   border-radius: ${rhythm(1/8)};
   margin: auto;
-  background: black;
+  background: ${props => ((props.isRoot || props.isAbout) ? 'black' : 'rgba(0, 0, 0, 0.50)')};
+
+  &:hover {
+    background: black;
+  }
 `
 
 const ContactIcon = () =>
@@ -39,6 +43,11 @@ const ContactIcon = () =>
 
 const NavLabel = styled.label`
   font-size: ${rhythm(1 / 2)};
+  color: ${props => ((props.isRoot || props.isAbout) ? 'black' : 'rgba(0, 0, 0, 0.50)')};
+
+  &:hover {
+    color: black;
+  }
 `
 
 const NavWork = NavItem.extend`
@@ -47,21 +56,25 @@ const NavWork = NavItem.extend`
 const NavContact = NavItem.extend`
   background: none;
   width: ${rhythm(4/5)};
+
+  & svg {
+    fill: rgba(0, 0, 0, 0.50);
+  }
 `
 
 const NavAbout = NavItem.extend`
   border-radius: ${rhythm(3/4)};
 `
 
-const NavigationMobile = () =>
+const NavigationMobile = ( { isRoot, isAbout }) =>
   <NavBar>
     <NavLink to="/">
-      <NavWork/>
-      <NavLabel>Work</NavLabel>
+      <NavWork isRoot={isRoot} />
+      <NavLabel isRoot={isRoot}>Work</NavLabel>
     </NavLink>
-    <NavLink to="/">
-      <NavAbout />
-      <NavLabel>About</NavLabel>
+    <NavLink to="/about">
+      <NavAbout isAbout={isAbout} />
+      <NavLabel isAbout={isAbout}>About</NavLabel>
     </NavLink>
     <NavLink to="/">
       <NavContact>

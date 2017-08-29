@@ -23,6 +23,13 @@ const Nav = styled.nav`
   `};
 `
 
+const NavLink = styled(StyledLink)`
+  &::before {
+    visibility: ${props => ((props.isRoot || props.isAbout) ? 'visible' : 'hidden')};
+    transform: ${props => ((props.isRoot || props.isAbout) ? 'scaleX(1)' : 'scaleX(0)')};
+  }
+`
+
 const NavList = styled.li`
   margin: 0;
 `
@@ -33,7 +40,7 @@ const NavSections = styled.ul`
   margin: 0;
 `
 
-const Navigation = () =>
+const Navigation = ( {isRoot, isAbout}) =>
   <Nav>
     <NavSections>
       <NavList>
@@ -47,14 +54,14 @@ const Navigation = () =>
     </NavSections>
     <NavSections>
       <NavList>
-        <StyledLink to="/">
+        <NavLink isRoot={isRoot} to="/">
           Work
-        </StyledLink>
+        </NavLink>
       </NavList>
       <NavList>
-        <StyledLink to="/">
+        <NavLink isAbout={isAbout} to="/about">
           About
-        </StyledLink>
+        </NavLink>
       </NavList>
       <NavList>
         <StyledLink to="/">

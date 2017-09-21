@@ -7,9 +7,7 @@ import PropTypes from 'prop-types'
 
 import StyledLink from './Link'
 
-const Content = styled.section`
-  width: 100%;
-`
+const Content = styled.section`width: 100%;`
 
 const SideContainer = styled.ul`
   list-style: none;
@@ -21,16 +19,14 @@ const SideItem = styled.li`
 `
 
 const SideHeader = styled.span`
-  font-size: ${rhythm(1/2)};
+  font-size: ${rhythm(1 / 2)};
   text-transform: uppercase;
-  color: rgba(0,0,0,0.5);
+  color: rgba(0, 0, 0, 0.5);
 `
 
 const SideBar = ({ sections }) =>
   <SideContainer>
-    <SideHeader>
-      Contents
-    </SideHeader>
+    <SideHeader>Contents</SideHeader>
     {sections &&
       sections.split(', ').map((section, array) =>
         <SideItem>
@@ -38,11 +34,11 @@ const SideBar = ({ sections }) =>
             {section}
           </StyledLink>
         </SideItem>
-    )}
+      )}
   </SideContainer>
 
 SideBar.propTypes = {
-  sections: PropTypes.string
-};
+  sections: PropTypes.string,
+}
 
 export default SideBar

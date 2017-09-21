@@ -7,16 +7,12 @@ import { media } from '../utils/media'
 const Foot = styled.footer`
   text-transform: uppercase;
   text-align: center;
-  font-size: ${rhythm(2/5)};
+  font-size: ${rhythm(2 / 5)};
   margin: auto;
   ${media.desktop`
     text-align: left;
   `};
 `
-const SiteFooter = () =>
-  <Foot>
-    &copy; Designed and developed by James Chu
-  </Foot>
-
+const SiteFooter = () => <Foot>&copy; Designed and developed by James Chu</Foot>
 
 export default SiteFooter

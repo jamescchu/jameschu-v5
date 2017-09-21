@@ -10,61 +10,102 @@ const Intro = styled.ul`
   list-style: none;
 `
 
-const Header = styled.p`
-  font-size: ${rhythm(1/2)};
+const Header = styled.span`
+  display: inline;
+  font-size: ${rhythm(1 / 2)};
   font-weight: bold;
-  width: 10%;
+  width: ${rhythm(4)};
   margin: 0;
   float: left;
 `
 
-const Item = styled.li`
-  font-size: ${rhythm(1/2)};
+const List = styled.li`
+  font-size: ${rhythm(1 / 2)};
   width: 100%;
   margin: 0;
-
-  &::before {
-    content: '${props => props.header }';
-    font-size: ${rhythm(1/2)};
-    font-weight: bold;
-    width: ${rhythm(4)};
-    margin: 0;
-    float: left;
-  }
 `
 
-const PostInfo = ({ project, role, date, website, description, client, team }) =>
+const Item = styled.span`
+  display: block;
+  padding-left: ${rhythm(4)};
+`
+
+const PostInfo = ({
+  project,
+  role,
+  date,
+  website,
+  description,
+  client,
+  team,
+  awards,
+}) =>
   <Intro>
-    { project!='na' &&
-      <Item header='Project:'>
-        {project}
-      </Item>
-    }
-    { client!='na' &&
-      <Item header='For:'>
-        {client}
-      </Item>
-    }
-    { team!='na' &&
-      <Item header='Team:'>
-        {team}
-      </Item>
-    }
-    { role!='na' &&
-      <Item header='Role:'>
-        {role}
-      </Item>
-    }
-    { date!='na' &&
-      <Item header='Date:'>
-        {date}
-      </Item>
-    }
-    { website!='na' &&
-      <Item header='Website:'>
-        {website}
-      </Item>
-    }
+    {project != 'na' &&
+      <List>
+        <Header>
+          Project:
+        </Header>
+        <Item>
+          {project}
+        </Item>
+      </List>}
+    {client != 'na' &&
+      <List>
+        <Header>
+          For:
+        </Header>
+        <Item>
+          {client}
+        </Item>
+      </List>}
+    {team != 'na' &&
+      <List>
+        <Header>
+          Team:
+        </Header>
+        <Item>
+          {team}
+        </Item>
+      </List>}
+    {role != 'na' &&
+      <List header="Role:">
+        <Header>
+          Role:
+        </Header>
+        <Item>
+          {role}
+        </Item>
+      </List>}
+    {date != 'na' &&
+      <List>
+        <Header>
+          Date:
+        </Header>
+        <Item>
+          {date}
+        </Item>
+      </List>}
+    {website != 'na' &&
+      <List>
+        <Header>
+          Website:
+        </Header>
+        <Item>
+          <Link to="{website}">
+            {website}
+          </Link>
+        </Item>
+      </List>}
+    {awards != 'na' &&
+      <List>
+        <Header>
+          Recognition:
+        </Header>
+        <Item>
+          {awards}
+        </Item>
+      </List>}
   </Intro>
 
 export default PostInfo

@@ -58,11 +58,30 @@
 
 html, body, #___gatsby {
   margin-bottom: 3.75rem;
-  color: black;
-  font-family: system-ui, "Segoe UI", Tahoma;
 }
 
 a, a:visited {
-  text-decoration: none;
+	text-decoration: none;
   color: black;
+}
+
+p a, p a:visited,
+ul a, ul a:visited  {
+  text-decoration: underline;
+}
+
+p a:hover,
+ul a:hover {
+	background: black;
+	color: white;
+}
+
+::-moz-selection {
+	background: black;
+	color: white;
+}
+
+::selection {
+	background: black;
+	color: white;
 }

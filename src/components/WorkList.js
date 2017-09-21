@@ -21,11 +21,11 @@ const ListContainer = styled.section`
 
 const ListTags = styled.div`
   text-transform: uppercase;
-  font-size: ${rhythm(2/5)};
+  font-size: ${rhythm(2 / 5)};
 `
 
 const ListImage = styled.div`
-  background-image: url('${props => props.img }');
+  background-image: url('${props => props.img}');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -52,7 +52,7 @@ const ListImage = styled.div`
 const ImageContainer = styled.div`
   width: 100%;
   height: ${rhythm(8)};
-  margin: 0 0 ${rhythm(3/4)} 0;
+  margin: 0 0 ${rhythm(3 / 4)} 0;
   overflow: hidden;
 
   &:hover ${ListImage} {

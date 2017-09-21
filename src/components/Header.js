@@ -30,5 +30,4 @@ const SiteHeader = () =>
     </LogoLink>
   </Header>
 
-
 export default SiteHeader

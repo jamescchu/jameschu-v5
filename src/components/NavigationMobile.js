@@ -22,51 +22,44 @@ const NavBar = styled.div`
 
 const NavLink = styled(Link)`
   display: block;
-  padding-top: ${rhythm(1/2)};
+  padding-top: ${rhythm(1 / 2)};
   height: 100%;
 `
 
 const NavItem = styled.div`
-  height: ${rhythm(3/4)};
-  width: ${rhythm(3/4)};
-  border-radius: ${rhythm(1/8)};
+  height: ${rhythm(3 / 4)};
+  width: ${rhythm(3 / 4)};
+  border-radius: ${rhythm(1 / 8)};
   margin: auto;
-  background: ${props => ((props.isRoot || props.isAbout) ? 'black' : 'rgba(0, 0, 0, 0.50)')};
-
-  &:hover {
-    background: black;
-  }
+  background: ${props =>
+    props.isRoot || props.isAbout ? 'black' : 'rgba(0, 0, 0, 0.50)'};
 `
 
 const ContactIcon = () =>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M329.6 24c-18.4-32-64.7-32-83.2 0L6.5 440c-18.4 31.9 4.6 72 41.6 72H528c36.9 0 60-40 41.6-72l-240-416z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+    <path d="M329.6 24c-18.4-32-64.7-32-83.2 0L6.5 440c-18.4 31.9 4.6 72 41.6 72H528c36.9 0 60-40 41.6-72l-240-416z" />
+  </svg>
 
 const NavLabel = styled.label`
   font-size: ${rhythm(1 / 2)};
-  color: ${props => ((props.isRoot || props.isAbout) ? 'black' : 'rgba(0, 0, 0, 0.50)')};
-
-  &:hover {
-    color: black;
-  }
+  color: ${props =>
+    props.isRoot || props.isAbout ? 'black' : 'rgba(0, 0, 0, 0.50)'};
 `
 
-const NavWork = NavItem.extend`
-`
+const NavWork = NavItem.extend``
 
 const NavContact = NavItem.extend`
   background: none;
-  width: ${rhythm(4/5)};
+  width: ${rhythm(4 / 5)};
 
   & svg {
     fill: rgba(0, 0, 0, 0.50);
   }
 `
 
-const NavAbout = NavItem.extend`
-  border-radius: ${rhythm(3/4)};
-`
+const NavAbout = NavItem.extend`border-radius: ${rhythm(3 / 4)};`
 
-const NavigationMobile = ( { isRoot, isAbout }) =>
+const NavigationMobile = ({ isRoot, isAbout }) =>
   <NavBar>
     <NavLink to="/">
       <NavWork isRoot={isRoot} />

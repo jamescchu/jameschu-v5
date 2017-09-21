@@ -8,9 +8,7 @@ import Helmet from 'react-helmet'
 import SideBarList from '../components/SideBarList'
 import PostInfo from '../components/PostInfo'
 
-const Container = styled.section`
-
-`
+const Container = styled.section``
 
 const SideBar = styled.div`
   display: none;
@@ -34,10 +32,10 @@ export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <section>
-      <Helmet
-        title={`James Chu - ${post.frontmatter.title}`}
-      />
-      <h1>{post.frontmatter.title}</h1>
+      <Helmet title={`James Chu - ${post.frontmatter.title}`} />
+      <h1>
+        {post.frontmatter.title}
+      </h1>
       <SideBar>
         <SideBarList sections={post.frontmatter.sections} />
       </SideBar>
@@ -50,7 +48,8 @@ export default ({ data }) => {
           website={post.frontmatter.website}
           client={post.frontmatter.client}
           team={post.frontmatter.team}
-          />
+          awards={post.frontmatter.awards}
+        />
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </Content>
     </section>
@@ -69,6 +68,7 @@ export const query = graphql`
         website
         team
         client
+        awards
       }
     }
   }

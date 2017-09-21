@@ -12,7 +12,7 @@ const Nav = styled.nav`
     display: flex;
     justify-content: space-between;
     max-width: ${rhythm(30)};
-    font-size: ${rhythm(2/5)};
+    font-size: ${rhythm(2 / 5)};
     text-transform: uppercase;
     margin: auto;
     padding: ${rhythm(1)} 0;
@@ -25,8 +25,10 @@ const Nav = styled.nav`
 
 const NavLink = styled(StyledLink)`
   &::before {
-    visibility: ${props => ((props.isRoot || props.isAbout) ? 'visible' : 'hidden')};
-    transform: ${props => ((props.isRoot || props.isAbout) ? 'scaleX(1)' : 'scaleX(0)')};
+    visibility: ${props =>
+      props.isRoot || props.isAbout ? 'visible' : 'hidden'};
+    transform: ${props =>
+      props.isRoot || props.isAbout ? 'scaleX(1)' : 'scaleX(0)'};
   }
 `
 
@@ -36,21 +38,17 @@ const NavList = styled.li`
 
 const NavSections = styled.ul`
   list-style: none;
-  width: 50%;
   margin: 0;
+  width: 50%;
 `
 
-const Navigation = ( {isRoot, isAbout}) =>
+const Navigation = ({ isRoot, isAbout }) =>
   <Nav>
     <NavSections>
       <NavList>
-        <StyledLink to="/">
-          James Chu
-        </StyledLink>
+        <StyledLink to="/">James Chu</StyledLink>
       </NavList>
-      <NavList>
-        Product Designer
-      </NavList>
+      <NavList>Product Designer</NavList>
     </NavSections>
     <NavSections>
       <NavList>
@@ -64,9 +62,7 @@ const Navigation = ( {isRoot, isAbout}) =>
         </NavLink>
       </NavList>
       <NavList>
-        <StyledLink to="/">
-          Contact
-        </StyledLink>
+        <StyledLink to="/">Contact</StyledLink>
       </NavList>
     </NavSections>
   </Nav>

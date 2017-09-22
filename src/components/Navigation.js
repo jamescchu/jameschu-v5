@@ -32,9 +32,7 @@ const NavLink = styled(StyledLink)`
   }
 `
 
-const NavList = styled.li`
-  margin: 0;
-`
+const NavList = styled.li`margin: 0;`
 
 const NavSections = styled.ul`
   list-style: none;

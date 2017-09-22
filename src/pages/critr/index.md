@@ -24,6 +24,12 @@ Improve the way how designers share and critique work-in-progress projects that:
 - Fosters a rich design community that helps network and connect with others.
 
 ##Focus
+**Research and Strategy**
+
+
+**High Fidelity Prototyping**
+
+**User Testing**
 
 ##Research
 

@@ -3,7 +3,7 @@ title: TEDxACCD 2017
 date: "2017-05-22T22:39:53.000Z"
 type: project
 tags: Management - Interaction Design - Development
-sections: section1, section2
+sections: overview, goals, challenge, focus, approach, value-proposition, research, decision-1, wireframe, visual-design, development, user-testing, decision-2, maintainance, outcome
 role: Product Management, Product Design, Development
 time: May 2017 – November 2017
 client: ArtCenter College of Design
@@ -56,7 +56,8 @@ I reached out to [Elliot Davis](http://elliottrdavis.com/) who had designed/deve
 
 `INSERT DIAGRAM HERE`
 
-##Decisions - Single-page vs Multi-page
+##Decision 1
+###Single-page vs Multi-page
 While the previous event site and multiple other TEDx events using a single page structure, I didn't think it was suitable for us this time around.
 
 ###Pros and Cons
@@ -130,7 +131,8 @@ The feedback helped temendously as it was a relief to know there weren't major u
 - To better reiterate our theme, I decided to use it directly as the main headline on our index page.
 - The distracting floating text was something that needed more attention and is expanded in the next section.
 
-##Decision - To Float or Not to Float
+##Decision 2
+###To Float or Not to Float
 Mentioned by a lot of our users, the floating "Beauty of the Fall" was actually distracting from the experience. The following were the options I had considered.
 
 - **Add a background**
@@ -154,13 +156,10 @@ Mentioned by a lot of our users, the floating "Beauty of the Fall" was actually 
   - This allows us to keep the entire design and interaction intact, while reducing the amount of complaints we have.
   - Although the navigation bar is hidden, it is immediately accessible when scrolling up, combined with a "back to top" arrow on the right side of the screen.
 
-##Maintainance and Updates
+##Maintainance
 With the design and launch completed, we switch to the second phase of the product. Thanks for the modularity of the design, 
 
-##Final Timeline
+##Outcome
 Very rarely, for us students, do the plans we set at the start of a project is accurately carried out till the end. I did my best to stick to the pre-made schedule, but we had to accomodate for sudden changes in scheduling from other teams as well as delays in both design and development.
 
 `INSERT FINAL TIMELINE HERE`
-
-##Final
-With such a large amount of 

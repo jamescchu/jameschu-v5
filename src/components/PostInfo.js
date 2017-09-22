@@ -43,65 +43,51 @@ const PostInfo = ({
   <Intro>
     {project != 'na' &&
       <List>
-        <Header>
-          Project:
-        </Header>
+        <Header>Project:</Header>
         <Item>
           {project}
         </Item>
       </List>}
     {client != 'na' &&
       <List>
-        <Header>
-          For:
-        </Header>
+        <Header>For:</Header>
         <Item>
           {client}
         </Item>
       </List>}
     {team != 'na' &&
       <List>
-        <Header>
-          Team:
-        </Header>
+        <Header>Team:</Header>
         <Item>
           {team}
         </Item>
       </List>}
     {role != 'na' &&
       <List header="Role:">
-        <Header>
-          Role:
-        </Header>
+        <Header>Role:</Header>
         <Item>
           {role}
         </Item>
       </List>}
     {date != 'na' &&
       <List>
-        <Header>
-          Date:
-        </Header>
+        <Header>Date:</Header>
         <Item>
           {date}
         </Item>
       </List>}
     {website != 'na' &&
       <List>
-        <Header>
-          Website:
-        </Header>
+        <Header>Website:</Header>
         <Item>
-          <Link to="{website}">
+          <Link to={website}>
             {website}
           </Link>
         </Item>
       </List>}
     {awards != 'na' &&
       <List>
-        <Header>
-          Recognition:
-        </Header>
+        <Header>Recognition:</Header>
         <Item>
           {awards}
         </Item>

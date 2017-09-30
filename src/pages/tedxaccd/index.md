@@ -8,10 +8,9 @@ role: Product Management, Product Design, Development
 time: May 2017 – November 2017
 client: ArtCenter College of Design
 website: 2017.tedxaccd.com
-team: Josephine Law, Yuma Naito
+team: James Chu, Josephine Law, Yuma Naito
 awards: na
 ---
-
 
 ##Overview 
 TEDxACCD is a bi-annual event uniquely led by students to create passionate conversations within the community by sharing and spreading ideas intersecting in technology, entertainment, and design. 
@@ -162,6 +161,17 @@ With the design and launch completed, we switch to the second phase of the produ
  
 ##Outcome 
 Very rarely, for us students, do the plans we set at the start of a project is accurately carried out till the end. I did my best to stick to the pre-made schedule, but we had to accommodate for sudden changes in scheduling from other teams as well as delays in both design and development. 
+
+###Key Learnings
+As with any experience, learning is a big part in helping blah blah
+
+- **Stepping Up**  
+While sometimes "just doing my job" is perfectly fine, "doing the right thing" is what matters(?).
+
+- **Can't Win Everything**  
+Working with lots of other talented individuals was more challenging than I thought. Everyone has their own set of experiences and principles that they've developed, and more often than not, it's different than your own. Learning to trust each other's judgements and compromising when necessary becomes important...
+
+###The Saga Continues
+With an increasing lack of marketing strategy in the team, and declining week-by-week sales, I ultimately decided to step up and take over the marketing and other responsibilities. As my role grows, it becomes impossible to detail everything here, so to summarize, my role has expanded to: Product Designer, Front-End Development, Digital IT, Volunteer Coordinator, Marketing Director.
  
 `INSERT FINAL TIMELINE HERE`
- 

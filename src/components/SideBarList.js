@@ -61,7 +61,7 @@ const SideBar = ({ sections }) =>
       sections.split(', ').map((section, array) =>
         <SideItem>
           <SideLink href={`#${section}`}>
-            {section}
+            {section.replace(/-/g, ' ')}
           </SideLink>
         </SideItem>
       )}

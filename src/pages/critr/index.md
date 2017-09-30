@@ -14,6 +14,7 @@ awards: ADAA 2017 Semifinalist — ArtCenter Student Gallery
 
 
 ##Overview 
+`TODO REWRITE INTRO`  
 Critr is a conceptual social media platform created and designed by myself. It is primarily focused on creating a community of designers that are sharing their work-in-progress photos or screenshot for critiques by others.  
  
 This can help relieve creative blocks or the hassle of having to send over broken screenshots and pictures of your work to others and a lengthy explanation of your intentions, only to get it wrong. 
@@ -25,13 +26,15 @@ Improve the way how designers share and critique work-in-progress projects that:
 - Fosters a rich design community that helps network and connect with others. 
  
 ##Focus 
-**Research and Strategy** 
+**Ideation and Concepts**  
+As we create our own concepts and ideas, it is important to validate them to ensure they are realistically viable and create a product strategy around both the design and the business model. I generated a list of 50 ideas, which were narrowed down via market research to have the best possible product.
+
+**High Fidelity Prototyping**  
+Building complete prototypes to test with the user allows for the most realistic scenarios and testing enviornment for people to feel and understand your product. FramerJS is now my tool of choice thanks to it's great customizability, ease of use, and potential of creating even deeper interactions.
  
- 
-**High Fidelity Prototyping** 
- 
-**User Testing** 
- 
+**User Testing**  
+Documenting how people interact with the product proved extremely valuable in helping me refine and develop interactions and experiences that would otherwise be impossible to discover, allowing me to push even further than ever before.
+
 ##Research 
  
 ###Competitor Landscape 
@@ -137,4 +140,16 @@ This was tested with a slightly modified version of the layout and design since 
   - Adjusted typographic hierarchy to have a little more clarity. 
  
 ##Final Design 
- 
+The final iteration of my design combines the goals I have set from the start, and the result of the entire product development process.
+
+##Outcome
+Having developed this over the course of approximately 8 months, I have learned a great deal, and can say I'm satisfied with the result.
+
+###Key Learnings
+Being one of the first products I have developed from the ground up, I have learned a great deal from this experience, which helped me further improve my workflow and product thinking. While there's too many to list, here's some of my key take-aways.
+
+- **Designing for the User From the Start**  
+Looking back at my process, I noticed I was initially focused on the business potential and visual experience more so than the user experience. Thankfully, I was able to correct that thinking once I got into producing prototypes and interviewing users. 
+
+- **Moving Beyond Style Guides**  
+Being a strong follower of rules and guidelines, I followed Apple's Design Style Guide to the tee. Ultimately, my design lacked uniqueness and personality. As I was developing my own product from the ground up, I feel as if I missed an opportunity to build on top of the style guide, and push it even further.

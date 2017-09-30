@@ -80,9 +80,9 @@ const PostInfo = ({
       <List>
         <Header>Website:</Header>
         <Item>
-          <Link to={website}>
+          <a target="_blank" href={`http://${website}`}>
             {website}
-          </Link>
+          </a>
         </Item>
       </List>}
     {awards != 'na' &&

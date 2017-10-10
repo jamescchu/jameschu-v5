@@ -11,7 +11,7 @@ const Nav = styled.nav`
   ${media.desktop`
     display: flex;
     justify-content: space-between;
-    max-width: ${rhythm(30)};
+    max-width: ${rhythm(35)};
     font-size: ${rhythm(2 / 5)};
     text-transform: uppercase;
     margin: auto;
@@ -22,14 +22,18 @@ const Nav = styled.nav`
     margin: auto;
   `};
 `
-
-const NavLink = styled(StyledLink)`
+const activeClassName = btoa(Math.random())
+const NavLink = styled(StyledLink).attrs({
+   activeClassName
+ })`
   &::before {
-    visibility: ${props =>
-      props.isRoot || props.isAbout ? 'visible' : 'hidden'};
-    transform: ${props =>
-      props.isRoot || props.isAbout ? 'scaleX(1)' : 'scaleX(0)'};
+    visibility: hidden;
+    transform: scaleX(0);
   }
+  &.${activeClassName}:before {
+   visibility: visible;
+   transform: scaleX(1);
+ }
 `
 
 const NavList = styled.li`margin: 0;`
@@ -40,27 +44,38 @@ const NavSections = styled.ul`
   width: 50%;
 `
 
-const Navigation = ({ isRoot, isAbout }) =>
+const NavLogo = NavSections.extend`
+  ${media.desktop`
+    visibility: hidden;
+  `};
+  ${media.giant`
+    visibility: visible;
+  `};
+`
+
+const Navigation = ({}) =>
   <Nav>
-    <NavSections>
+    <NavLogo>
       <NavList>
-        <StyledLink to="/">James Chu</StyledLink>
+        <StyledLink exact activeClassName={activeClassName} to="/">James Chu</StyledLink>
       </NavList>
       <NavList>Product Designer</NavList>
-    </NavSections>
+    </NavLogo>
     <NavSections>
       <NavList>
-        <NavLink isRoot={isRoot} to="/">
+        <NavLink exact activeClassName={activeClassName} to="/">
           Work
         </NavLink>
       </NavList>
       <NavList>
-        <NavLink isAbout={isAbout} to="/about">
-          About
+        <NavLink exact activeClassName={activeClassName} to="/other">
+          Other
         </NavLink>
       </NavList>
       <NavList>
-        <StyledLink to="/">Contact</StyledLink>
+        <NavLink exact activeClassName={activeClassName} to="/about">
+          About
+        </NavLink>
       </NavList>
     </NavSections>
   </Nav>

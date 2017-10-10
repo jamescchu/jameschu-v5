@@ -1,11 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import { rhythm } from '../utils/typography'
+import {rhythm} from '../utils/typography'
 
-import { media } from '../utils/media'
+import {media} from '../utils/media'
 
-const NavBar = styled.div`
+const NavBar = styled.div `
   position: fixed;
   bottom: 0;
   width: 100vw;
@@ -15,66 +15,77 @@ const NavBar = styled.div`
   justify-content: space-around;
   align-items: center;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.80);
-  ${media.desktop`
+  ${media.desktop `
     display: none;
   `};
 `
+const activeClassName = btoa(Math.random())
+const NavLink = styled(Link).attrs({
+   activeClassName
+ })`
+  display: block;
+  padding-top: ${rhythm(1 / 2)};
+  height: 100%;
+  width: ${rhythm(3)};
+  text-align: center;
+  
+  opacity: 0.5;
+  &.${activeClassName} {
+   opacity: 1;
+ }
+`
 
-const NavLink = styled(Link)`
+const NavAnchor = styled.a `
   display: block;
   padding-top: ${rhythm(1 / 2)};
   height: 100%;
 `
 
-const NavItem = styled.div`
+const NavItem = styled.div `
   height: ${rhythm(3 / 4)};
   width: ${rhythm(3 / 4)};
   border-radius: ${rhythm(1 / 8)};
   margin: auto;
-  background: ${props =>
-    props.isRoot || props.isAbout ? 'black' : 'rgba(0, 0, 0, 0.50)'};
+  background: black;
 `
 
-const ContactIcon = () =>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-    <path d="M329.6 24c-18.4-32-64.7-32-83.2 0L6.5 440c-18.4 31.9 4.6 72 41.6 72H528c36.9 0 60-40 41.6-72l-240-416z" />
-  </svg>
+const TriangleIcon = () => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+  <path d="M329.6 24c-18.4-32-64.7-32-83.2 0L6.5 440c-18.4 31.9 4.6 72 41.6 72H528c36.9 0 60-40 41.6-72l-240-416z"/>
+</svg>
 
-const NavLabel = styled.label`
+const NavLabel = styled.label `
   font-size: ${rhythm(1 / 2)};
-  color: ${props =>
-    props.isRoot || props.isAbout ? 'black' : 'rgba(0, 0, 0, 0.50)'};
+  color: black;
 `
 
-const NavWork = NavItem.extend``
+const NavSquare = NavItem.extend ``
 
-const NavContact = NavItem.extend`
+const NavTriangle = NavItem.extend `
   background: none;
   width: ${rhythm(4 / 5)};
 
   & svg {
-    fill: rgba(0, 0, 0, 0.50);
+    fill: black;
   }
 `
 
-const NavAbout = NavItem.extend`border-radius: ${rhythm(3 / 4)};`
+const NavCircle = NavItem.extend `border-radius: ${rhythm(3 / 4)};`
 
-const NavigationMobile = ({ isRoot, isAbout }) =>
-  <NavBar>
-    <NavLink to="/">
-      <NavWork isRoot={isRoot} />
-      <NavLabel isRoot={isRoot}>Work</NavLabel>
-    </NavLink>
-    <NavLink to="/about">
-      <NavAbout isAbout={isAbout} />
-      <NavLabel isAbout={isAbout}>About</NavLabel>
-    </NavLink>
-    <NavLink to="/">
-      <NavContact>
-        <ContactIcon />
-      </NavContact>
-      <NavLabel>Contact</NavLabel>
-    </NavLink>
-  </NavBar>
+const NavigationMobile = ({}) => <NavBar>
+  <NavLink exact activeClassName={activeClassName} to="/">
+    <NavSquare/>
+    <NavLabel>Work</NavLabel>
+  </NavLink>
+  <NavLink exact activeClassName={activeClassName} to="/other">
+    <NavCircle/>
+    <NavLabel>Other</NavLabel>
+  </NavLink>
+  <NavLink exact activeClassName={activeClassName} to="/about">
+    <NavTriangle>
+      <TriangleIcon/>
+    </NavTriangle>
+    <NavLabel>About</NavLabel>
+  </NavLink>
+</NavBar>
 
 export default NavigationMobile

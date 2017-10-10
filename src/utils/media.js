@@ -2,8 +2,8 @@ import { css } from 'styled-components'
 
 const sizes = {
   tablet: 720,
-  desktop: 992,
-  giant: 1270,
+  desktop: 1140,
+  giant: 1480,
 }
 
 // https://github.com/JohnAlbin/styled-media-queries

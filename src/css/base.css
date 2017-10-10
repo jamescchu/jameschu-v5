@@ -76,6 +76,19 @@ ul a:hover {
 	color: white;
 }
 
+video, img, span {
+	border-radius: 8px;
+}
+
+video {
+	margin-bottom: 20px;
+}
+
+iframe {
+	border: none;
+	padding-bottom: 20px;
+}
+
 ::-moz-selection {
 	background: black;
 	color: white;

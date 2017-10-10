@@ -3,22 +3,24 @@ title: Critr
 date: "2016-08-22T22:39:53.000Z"
 type: project
 tags: Research - Interaction Design - Art Direction
-sections: section1, section2
+sections: overview, focus, research, wireframes, prototyping, early-design, user-scenario, intermission, framerjs, user-testing, final-design, prototype, outcome
 role: Product Design
 time: May 2016 – December 2016
 client: ArtCenter College of Design
 website: na
 team: na
 awards: ADAA 2017 Semifinalist — ArtCenter Student Gallery
+draft: false
 ---
 
 
 ##Overview 
-`TODO REWRITE INTRO`  
-Critr is a conceptual social media platform created and designed by myself. It is primarily focused on creating a community of designers that are sharing their work-in-progress photos or screenshot for critiques by others.  
+Critr is a conceptual social media platform primarily focused on creating a community of designers that are sharing their work-in-progress photos or screenshot for critiques by others.  
  
-This can help relieve creative blocks or the hassle of having to send over broken screenshots and pictures of your work to others and a lengthy explanation of your intentions, only to get it wrong. 
+This can help relieve creative blocks or the hassle of having to send over broken screenshots and pictures of your work to others with a lengthy explanation of your intentions, only to get it misinterpreted. 
  
+![Various Tab Layouts](/images/d-comment.png)
+
 ##Goals 
 Improve the way how designers share and critique work-in-progress projects that: 
  
@@ -40,16 +42,18 @@ Documenting how people interact with the product proved extremely valuable in he
 ###Competitor Landscape 
 As this is a brand new concept, the first step was to research the competitive landscape to analyze the feasibility of such a platform. 
  
-`INSERT COMPETITIVE RESEARCH` 
+![Competitive Landscape Chart](/images/c-chart.png)
  
 ###User Interviews 
 Interviews were conducted with fellow design students at ArtCenter to see what their main problems and concerns are. As they themselves go through the design process rigorously everyday, they fit my target audience nicely.  
  
-`INSERT USER INTERVIEWS` 
+![Interview with Kasey Chen](/images/c-interviews.png)
+
+![Interview with Froilan Tam](/images/c-interviews2.png)
  
 - **Analysis** 
   - They care about balance between coming up with solutions on their own, and asking others. 
-  - Access to quick feedback sessions are a big deal. 
+  - Access to quick feedback sessions are considered valuable. 
  
 ###Feature List 
 In order to not bloat the product with excessive features, I drafted a basic chart of features that we need and don't need. 
@@ -59,23 +63,32 @@ In order to not bloat the product with excessive features, I drafted a basic cha
 ###User Flow 
 An initial layout of my platform was developed based on anticipated features that I have decided on in the previous section, this flow will evolve over time as the project progresses. 
  
-`INSERT USER FLOW` 
+![Sticky Notes of User Flow](/images/d-navigation.png)
  
 ##Wireframes 
 A rough pass of digital wireframes were created to further demonstrate a user's flow through the application, as well as exploring new interactions with the newly released "3D Touch" feature by Apple on the latest iPhone. 
  
-`INSERT WIREFRAMES` 
+![Wireframes Part 1](/images/d-wireframe.png)
+
+![Wireframes Part 2](/images/d-wireframe2.png)
  
 ##Visual Design 
 With the application focused on designers and their work, I wanted the design of the app to be more subtle in order to not compete with the work of others. The design originally featured a seafoam green as it's accent color due to it's soothing nature, however this was changed to a brighter red that gave a much more vibrant and refreshing appearance. 
  
-`INSERT VISUAL DESIGN` 
+![Early Design Styles](/images/d-early.png)
+_Early Design Exploration Includes a Light Seafoam Green._
  
 ##Prototyping 
 The first pass of prototyping was created using Pixate (now defunct). The primary decision to go with Pixate was simple, it was free and had a fairly easy learning curve, and when it was acquired by Google at the time, I thought it was something that would eventually reach wide adoption. 
  
-`INSERT PIXATE SCREENSHOT` 
- 
+![Working in Pixate](/images/p-pixate.png)
+
+<video width="100%" height="100%" loop="" autoplay="" playsinline="" class="fullView">
+  <source src="/videos/critr-3dtouch.mp4" type="video/mp4">
+</video>
+
+The 3D Touch feature would later be ommited as I did not have a 3D Touch compatible device (iPhone 6), thus testing it's interactions would be inaccurate going forward. The above prototype was created in Pixate using Long Presses to simulate the interaction.
+
 ##User Scenario 
 To better demonstrate how the app works and interacts, a short video was directed and filmed by myself to illustrate the various different devices and features that are used throughout a normal day. 
  
@@ -90,15 +103,21 @@ In order to further refine the concept and design, I needed to create a prototyp
 ###Apple Watch 
 While learning Framer, I created a version of my app for the Apple Watch, which I then created a simple prototype in Framer. To further benchmark myself on the concept of "rapid prototyping", I set a limit of 3 hours to design and create a prototype of a single use case. Which was easily achievable. 
  
-`INSERT APPLE WATCH PROTOTYPE` 
- 
+<video width="100%" height="100%" loop="" autoplay="" playsinline="" class="fullView">
+  <source src="/videos/critr-watch-notify.mp4" type="video/mp4">
+</video>
+
 ###High Fidelity Prototypes 
 To better test the usability and design of the app, I recreated the entire prototype from Pixate to Framer and flushed out even more interactive screens along the way. 
  
-`INSERT FRAMER PROTOTYPE` 
- 
+![Working in FramerJS](/images/p-framer.png)
+
+<video width="100%" height="100%" loop="" autoplay="" playsinline="" class="fullView">
+  <source src="/videos/critr-zoom.mp4" type="video/mp4">
+</video>
+
 ##User Testing 
-I conducted testing with approximately 6 individuals per "version". To avoid any bias, the users were kept different between sessions with a few overlap to test the overall progressions. 
+I conducted testing with approximately 6 individuals per round. To avoid any bias, the users were different between sessions with a few overlap to test the overall progressions. 
  
 ###Round 1 
 This was tested with a slightly modified version of the layout and design since the Pixate prototype, now redone in Framer with more interactions. 
@@ -140,7 +159,42 @@ This was tested with a slightly modified version of the layout and design since 
   - Adjusted typographic hierarchy to have a little more clarity. 
  
 ##Final Design 
-The final iteration of my design combines the goals I have set from the start, and the result of the entire product development process.
+The final iteration of my design combines the goals I have set from the start, and the result of the entire product development process. 
+
+A Prototype is at the end if you'd like to just jump in.
+
+**Home Screen**  
+The home screen is split into 3 seperate views that are curated to deliver relavent content, as well as allowing discoverability for new users.
+
+![Home Screen Layouts](/images/d-home.png)
+
+<video width="100%" height="100%" loop="" autoplay="" playsinline="" class="fullView">
+  <source src="/videos/critr-home-scroll.mp4" type="video/mp4">
+</video>
+
+**Tab Navigation**
+Navigating between tabs are straight forward and simple. A quick fade transition indicates that they are navigating on the same visual "plane".
+
+![Various Tab Layouts](/images/d-pages.png)
+
+<video width="100%" height="100%" loop="" autoplay="" playsinline="" class="fullView">
+  <source src="/videos/critr-tab-nav.mp4" type="video/mp4">
+</video>
+
+**Project Navigation**  
+Projects transitions through a seperate "layer" to indicate the user is moving the project into view. This allows the user to visually comprehend where they are in the heigharchy without distracting their experience.
+
+<video width="100%" height="100%" loop="" autoplay="" playsinline="" class="fullView">
+  <source src="/videos/critr-project-comment.mp4" type="video/mp4">
+</video>
+
+<video width="100%" height="100%" loop="" autoplay="" playsinline="" class="fullView">
+  <source src="/videos/critr-zoom.mp4" type="video/mp4">
+</video>
+
+##Prototype
+To see the detailed project flow, just look for the "In the tumult." project on the "Following" home screen.
+<iframe src="https://framer.cloud/oedBu/" url="https://framer.cloud/oedBu/" width="100" height="100"></iframe>
 
 ##Outcome
 Having developed this over the course of approximately 8 months, I have learned a great deal, and can say I'm satisfied with the result.

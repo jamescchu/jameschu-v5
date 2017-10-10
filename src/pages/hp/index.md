@@ -3,13 +3,14 @@ title: HP Sponsored Project
 date: "2017-01-22T22:39:53.000Z"
 type: project
 tags: Restricted Project
-sections: overview, team, ideation-and-research, disaster, scenario, outcome
+sections: overview, brief, goal, team, ideation-and-research, disaster, scenario, outcome
 role: Concept Development, Project Management, UI/UX Design, Research, Motion Graphics
 time: January 2017 – April 2017
 client: ArtCenter College of Design
 website: na
 team: James Chu, Chloe Kim, Juno Park, Yidan Zhang
 awards: na
+draft: false
 ---
 
 ##Overview 
@@ -18,8 +19,12 @@ A course sponsored by HP exploring the future of computing technology. The proje
 ###Confidentiality
 Due to the nature of this project, release of materials is still restricted and thus this study will only cover the process at a higher level and images recorded throughout.
 
-##Goals 
+##Brief 
 - Redefine the future of computing.
+- Create an ecosystem of products integrating both industrial and interaction design.
+
+##Goal 
+- Enhance the way we communicate with others.
 
 ###Deliverables
 With only 14 weeks, we had a tall order to deliver, however this is a general breakdown:

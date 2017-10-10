@@ -13,6 +13,12 @@ const SideContainer = styled.ul`
   list-style: none;
   margin: 0;
   position: fixed;
+  ${media.desktop`
+    display: none;
+  `};
+  ${media.giant`
+    display: block;
+  `};
 `
 
 const SideItem = styled.li`margin: 0;`
@@ -23,36 +29,7 @@ const SideHeader = styled.span`
   color: rgba(0, 0, 0, 0.5);
 `
 
-const SideLink = styled.a`
-  position: relative;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: ${rhythm(2 / 5)};
-
-  &:hover {
-    background: none;
-    color: black;
-  }
-
-  &::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: -2px;
-    left: 0;
-    background: black;
-    visibility: hidden;
-    transform-origin: left;
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out 0s;
-  }
-
-  &:hover::before {
-    visibility: visible;
-    transform: scaleX(1);
-  }
-`
+const SideLink = StyledLink.withComponent(`a`)
 
 const SideBar = ({ sections }) =>
   <SideContainer>

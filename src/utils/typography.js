@@ -3,8 +3,8 @@ import { MOBILE_MEDIA_QUERY } from 'typography-breakpoint-constants'
 
 const options = {
   baseFontSize: '18px',
-  baseLineHeight: 1.5,
-  scaleRatio: 2.5,
+  baseLineHeight: 1.8,
+  scaleRatio: 2.75,
   headerFontFamily: ['system-ui', 'Segoe UI', 'Tahoma', 'sans-serif'],
   bodyFontFamily: ['system-ui', 'Segoe UI', 'Tahoma', 'sans-serif'],
   overrideStyles: ({ rhythm, scale }, options) => ({

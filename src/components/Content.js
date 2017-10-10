@@ -8,7 +8,7 @@ const ContentContainer = styled.main`
   max-width: initial;
   margin: 0 ${props => (props.isRoot ? 'auto' : rhythm(1))};
   ${media.desktop`
-    max-width: ${rhythm(30)};
+    max-width: ${rhythm(35)};
     margin: auto;
   `};
   ${media.giant`

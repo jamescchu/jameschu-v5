@@ -3,13 +3,14 @@ title: TEDxACCD 2017
 date: "2017-05-22T22:39:53.000Z"
 type: project
 tags: Management - Interaction Design - Development
-sections: overview, goals, challenge, focus, approach, value-proposition, research, decision-1, wireframe, visual-design, development, user-testing, decision-2, maintenance, outcome
+sections: overview, goals, challenge, role, focus, approach, value-proposition, research, decision-1, wireframe, visual-design, development, user-testing, decision-2, maintenance, outcome
 role: Product Management, Product Design, Development
 time: May 2017 – November 2017
 client: ArtCenter College of Design
 website: 2017.tedxaccd.com
 team: James Chu, Josephine Law, Yuma Naito
 awards: na
+draft: false
 ---
 
 ##Overview 
@@ -17,7 +18,7 @@ TEDxACCD is a bi-annual event uniquely led by students to create passionate conv
  
 I joined the student team as the primary designer and engineer for the event website. As part of a 20 person team, I worked with individuals from various backgrounds to deliver the best TEDx experience at ArtCenter. 
  
-`CONSIDER INSERT DESIGN HERE` 
+![Group Photo of TEDx Team](images/tedx-header-v2.png)
  
 ##Goals 
 - Create a centralized hub of information for users to access. 
@@ -26,17 +27,24 @@ I joined the student team as the primary designer and engineer for the event web
 ##Challenge 
 **We needed a site up and running in 5 weeks.** 
  
-Being the only Interaction Designer on the team, time and resources were scarce. With the inclusion of Graphic Designers [Yuma Naito](https://www.linkedin.com/in/yuma-naito-76729b76) and [Josephine Law](http://josephinelaw.info/), a sub-team dedicated to just the event page was formed. 
+With the event due in a few months, we needed to be able to start getting the word out and have an online hub of information.
+
+![Showcase of TEDx Home and Venue Page](images/tedx-header.png)
  
+##Role
+Being the only Interaction Designer on the team, time and resources were scarce. With the inclusion of Graphic Designers [Yuma Naito](https://www.linkedin.com/in/yuma-naito-76729b76) and [Josephine Law](http://josephinelaw.info/), a sub-team dedicated to just the event page was formed. 
+
+Yuma Naito and Josephine Law would assist me in exploring various visual designs and aesthetics for our final product. Yuma, with his amount of design experience, would help shape and direct the foundational design which we will build upon. My part involved drafting up the wireframes and layouts, creating the final mockups and developing the site for launch. With frequent feedback and idea's bounced between us along the way, everyone had a hand in the final product, while I made sure we stayed on track to deliver the best possible user experience.
+
 ##Focus 
 **Leadership and Management**   
 From previous experience, organization and direction is a must to keep things moving. Referencing various methodologies such as Scrum and Kanban, I created an accelerated timeline of key milestones we needed to hit per week. 
  
 **Defending Principles**   
-Being in a team of Graphic Designers working on a website caused constant conflicts between the visual and user experience. Compromise was necessary to move forward, but I had to ensure the user wasn't getting the short end of the stick. I would work through every design decision both ways to ultimately show how important that some standards, while not visually unique, are critical to a smoother experience. 
+Being in a team of Graphic Designers working on a website caused constant conflicts between the visual and user experience. Compromise was necessary to move forward, but I had to ensure the user wasn't getting the short end of the stick. I would work through every design decision both ways to ultimately show how important that some standards, while not visually unique, are critical to a better experience. 
  
 **Growing the Team**   
-Working with my 2 Graphic Designers, I trusted their design senses. However, with their limited experience in digital products, I wanted to ensure that little to no compromises were made to the user experience. Thus, I took my time to educate and inform them of key principles in creating user-centered designs. Incorporating this into my feedback of any work they present as well. 
+Working with my 2 Graphic Designers, I trusted their design senses. However, with their limited experience in digital products, I wanted to ensure that they could consider the user in their process. Thus, I took my time to educate and inform them of key principles in creating user-centered designs. Incorporating this into my feedback of any work they present as well. 
  
 **Development using Modern Tools**   
 After scoping out the scale and requirements of the site with organization leaders, I decided to develop using a static [JAMstack](https://jamstack.org/). Allowing for fast iterations and high performance for the end-user. 
@@ -44,7 +52,7 @@ After scoping out the scale and requirements of the site with organization leade
 ##Approach   
 With an extremely tight deadline, we had no choice but to accelerate parts of the process. After some discussion with the team and organization leaders, I created a timeline of key milestones we should hit each week. Accessing the situation, I decided to set a soft deadline 1 week earlier than the launch date to help ensure we had at least a minimum viable product to deliver. 
  
-`INSERT TIMELINE HERE` 
+![Planned Weekly Schedule](images/tedx-timeline.png)
  
 ##Value Proposition   
 As a TEDx event, we were excited to bringing in speakers from various fields and were proud to deliver an experience created exclusively by students. It was critical for my team to consider the wider audience that such an event attracts, but also provide a unique experience from our perspective as students of design. 
@@ -54,7 +62,7 @@ No thanks to the accelerated timeline that I created, it was impossible to craft
  
 I reached out to [Elliot Davis](http://elliottrdavis.com/) who had designed/developed the previous TEDxACCD event page, [2015.tedxaccd.com](http://2015.tedxaccd.com/). We discussed the various challenges that he had and what/who we were designing for. Based on site analytics and ticket sales in 2015, we set our primary target audience to be approximately 50% students/alumni, and 50% the local community in Pasadena. Building on his past experiences proved extremely valuable as it allowed me to be more confident in certain decisions which served as the foundation of the product. 
  
-`INSERT DIAGRAM HERE` 
+![Feature Prioritizations](images/tedx-features.png)
  
 ##Decision 1 
 ###Single-page vs Multi-page 
@@ -84,6 +92,8 @@ After doing some research on user behaviors in the 2015 site and web technologie
   - We will put some more emphasis on the homepage to deliver a quick linear story to the user while branching out information. 
   - Utilizing PJAX (PushState + AJAX) we can create seamless transitions between pages, removing sudden breaks in the experience, and have the site feeling more responsive. 
  
+![Navigation Structure](images/tedx-sitemap.png)
+
 ##Wireframe 
 Learning from my past experiences, I approached wireframes differently this time around. Instead of creating high fidelity digital wireframes, I stuck with the good old pen and paper. This can be attributed to 2 reasons: 
  
@@ -93,47 +103,67 @@ Learning from my past experiences, I approached wireframes differently this time
 - **Over designing UX**   
   Wireframes that ultimately resemble a final product leaves little room for the visual design to grow. Perhaps I don't get it yet, but this [article on Medium](https://medium.muz.li/wireframes-are-dead-why-i-havent-used-wires-in-over-a-year-8027fcce1b3f) resonated my past frustrations. 
    
-`INSERT WIREFRAMES HERE` 
- 
+![Pen on Paper Wireframe Sketches](images/tedx-wireframes.png)
+
+###Mobile First
+The layout was sketched with mobile first in mind including details on all necessary site content/copy. Everything would be checked off by the organizers and marketing team to ensure we're on the same page.
+
+With my previous experience working on responsive layouts, I was able to anticipate how the layouts will respond to screen widths as I sketch. Due to increasing pressure on time and resources available, I elected to omit elaborate changes to the layout on Desktop sizes and moved swiftly to mock up the visual design.
+
 ##Visual Design 
 In order to follow a unified language, the Graphics team has created a brand style guide for us to use as reference. An important part of our brand was to tailor the design to each medium, and thus me and my team took some liberties to craft a unique experience that was still inline with the values and key aspects of the identity. 
- 
-`INSERT DESIGNS HERE` 
- 
+
+Yuma Naito assisted in creating a unique visual language based on bold typography and colors, along with Josephine Law who excelled in pushing the envelope of common design practices. I would later utilize their work as a foundation to the design along with their feedback and ideas to create the final design mockups for development.
+
+![Mock up of Final Design of Homepage](images/tedx-design.png)
+
 ###Adaptability 
 While the design may seem overly dependent on text, this was a decision made in order to allow for maximum adaptability in the future. With the Graphics team heavily focused on production of other assets for the event, imagery and graphical resources for the website is lacking. By replying mostly on text, we allow room for the design to grow and incorporate images in certain areas, as well as account for any sudden need for additional sections or features. 
- 
+
+![Overview of all Mockup Designs](images/tedx-design-view.png)
+
 ###Modularity 
 In addition to keeping the design light weight and adaptable, the design is made up of smaller components that make up the greater whole. From text links to templates of how user profiles come together, the design utilizes reusable components to further enhance our adaptability in addition to keeping the development time low by reducing the need for creating dedicated layouts throughout the website. 
- 
+
+###Micro-Interactions
+To further enhance the user's experience, I took care to implement various little interactions for users when they scroll, hover or click through the site. To ensure that these bits of animation don't hinder any aspects of the interactions, I made sure that they lasted only for about 200 – 500ms and rigorously tested their repeatability to not feel distracting or slow.
+
+<video width="100%" height="100%" loop="" autoplay="" playsinline="" class="fullView">
+  <source src="/videos/tedx-micro.mp4" type="video/mp4">
+</video>
+
 ##Development 
 Thanks to preparation I had done beforehand, I was able to develop and launch the site in the 3 weeks left. While I won't dive too deep on this process for now, however I did my best to keep with common industry best practices and standards when developing the product, to be as close to experiencing a "real" developer's workflow when possible. 
- 
-The entire source code for the website can be found here:   
+
+The entire source code for the website can be found on my Github:   
 https://github.com/jamescchu/tedxaccd-2017 
- 
+
 ##User Testing 
 With the preliminary designs and development work finished, we reached out to 19 users and had them go through the website with minimal instructions with the objective of finding all the information they may want to know and any other feedback/opinions. 
- 
+
+To help you contextualize these findings, check out [version 0.0.10](https://develop-0-0-10--tedxaccd-2017.netlify.com/) of the site which we used for this test.
+
 ###Key Insights 
 - [+] Navigation is simple and understandable 
 - [+] Liked the dropping "L" micro-interaction 
 - [-] Arrangement of "Beauty of the Fall" is unclear 
 - [-] "Red Dot" to buy tickets on the right side feels out of place 
 - [-] Font sizes feel large when viewing 
-- [-] Floating "Beauty of the Fall" is distracting 
- 
+- [-] Floating "Beauty of the Fall" is distracting when on mobile
+
 ###Assessments 
 The feedback helped tremendously as it was a relief to know there weren't major usability issues, I was rather shocked that there were a lot of comments towards the typography on the page. After taking account of the multiple responses, I assessed them carefully. 
- 
+
 - As I work on a large display, I failed to notice that people viewing on smaller 13" and 15" MacBooks did not scale the text properly, leading to extremely oversized typography. 
 - Redesigning the "Red Dot" interaction, I expanded it further with a clear ticket icon alongside scrolling indicators as I noticed some people were confused if they could scroll on the first page. 
 - To better reiterate our theme, I decided to use it directly as the main headline on our index page. 
 - The distracting floating text was something that needed more attention and is expanded in the next section. 
+
+A complete list of changes I have made can be found in [my changelog](https://github.com/jamescchu/tedxaccd-2017/blob/master/CHANGELOG.md#010---2017-08-12).
  
 ##Decision 2 
 ###To Float or Not to Float 
-Mentioned by a lot of our users, the floating "Beauty of the Fall" was actually distracting from the experience. The following were the options I had considered. 
+Mentioned by a lot of our users, the floating "Beauty of the Fall" was actually distracting from the experience when on mobile. They described the overlaping text as an "error" and generally unappealing. Hence the following were the options I had considered. 
  
 - **Add a background** 
   - [+] Makes text overlap feel less like an issue. 
@@ -154,24 +184,28 @@ Mentioned by a lot of our users, the floating "Beauty of the Fall" was actually 
 - **Hide the navigation bar while scrolling** 
   - While not a direct solution, by moving the text up as the navigation bar hides, it removes it from being close to the center of the screen, and thus out of immediate focus for the user. 
   - This allows us to keep the entire design and interaction intact, while reducing the amount of complaints we have. 
-  - Although the navigation bar is hidden, it is immediately accessible when scrolling up, combined with a "back to top" arrow on the right side of the screen. 
+  - Although the navigation bar is not fixed, a "back to top" arrow on the right side of the screen should make navigating easily accessible. Due to technical limitations, I was unable to have the navigation slide back down from the top as you scroll up.
  
-##Maintenance 
-With the design and launch completed, we switch to the second phase of the product. Thanks for the modularity of the design,  
+<video width="100%" height="100%" loop="" autoplay="" playsinline="" class="fullView">
+  <source src="/videos/tedx-compare.mp4" type="video/mp4">
+</video>
+
+##Maintenance
+With the design and launch completed, we switch to the second phase of the product. Due to the intial rush to deliver, I had intentionally excluded a few non-critical pages for launch. These were the Schedule and Media pages, which happen close-to/during the event and post event. Thanks to the modularity of the design from the beginning, we're confident to be able to incorporate the same experience consistently throughout any additional requirements.
  
 ##Outcome 
-Very rarely, for us students, do the plans we set at the start of a project is accurately carried out till the end. I did my best to stick to the pre-made schedule, but we had to accommodate for sudden changes in scheduling from other teams as well as delays in both design and development. 
+With the design, development and launch completed, this about wraps up the project for the time being. While the tight deadline really restricted the amount of work we could do, I'm extremely happy to be able to achieve such a result from sketches on paper to a full blown site in a mere 5 weeks, and I hope you do too.
+
+[Check out the live site!](https://2017.tedxaccd.com)
 
 ###Key Learnings
-As with any experience, learning is a big part in helping blah blah
-
-- **Stepping Up**  
-While sometimes "just doing my job" is perfectly fine, "doing the right thing" is what matters(?).
+As with any experience, learning is a big part in helping me grow as a designer, and this is no different.
 
 - **Can't Win Everything**  
-Working with lots of other talented individuals was more challenging than I thought. Everyone has their own set of experiences and principles that they've developed, and more often than not, it's different than your own. Learning to trust each other's judgements and compromising when necessary becomes important...
+Working with lots of other talented individuals was more challenging than I thought. Everyone has their own set of experiences and principles that they've developed, and more often than not, it's different than my own. Learning to trust each other's judgements and compromising when necessary becomes important in working with others to reach new heights.
 
-###The Saga Continues
-With an increasing lack of marketing strategy in the team, and declining week-by-week sales, I ultimately decided to step up and take over the marketing and other responsibilities. As my role grows, it becomes impossible to detail everything here, so to summarize, my role has expanded to: Product Designer, Front-End Development, Digital IT, Volunteer Coordinator, Marketing Director.
- 
-`INSERT FINAL TIMELINE HERE`
+- **Step Back to See the Big Picture**  
+While neck deep in developing the site during the final weeks, I was in a bit of a mental burn out, growing more and more complacent to changes and feedback. I really have to thank my bud [Justin Kwak](http://justinkwak.com/) for giving me a stern wake up call and helping me realize that my complacency had totally side-tracked the user experience for the worse. Sometimes stepping away for a bit and having a 2nd opinion can really help you see things you don't realize when you're too close.
+
+- **Step Up to do the Right Thing**  
+For some time, I was the sole person that was just there to make the website, following the orders of others as I went along. However, the mockups I was given were totally unusable from both a technical and user perspective. At that point I knew that simply sitting around and waiting for someone would achieve nothing, so I decided to step up. Having conversations about my plans and ambitions, I would be put in charge of a small "web team", and that's how everything came to be.

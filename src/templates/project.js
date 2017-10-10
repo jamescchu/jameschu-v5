@@ -17,12 +17,21 @@ const SideBar = styled.div`
     width: 20%;
     float: left;
   `};
+  ${media.giant`
+    display: block;
+    width: 10%;
+    float: left;
+  `};
 `
 
 const Content = styled.div`
   width: 100%;
   margin: 0;
   ${media.desktop`
+    margin-left: 10%;
+    width: 90%;
+  `};
+  ${media.giant`
     margin-left: 20%;
     width: 80%;
   `};

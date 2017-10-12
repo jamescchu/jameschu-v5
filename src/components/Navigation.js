@@ -22,7 +22,7 @@ const Nav = styled.nav`
     margin: auto;
   `};
 `
-const activeClassName = btoa(Math.random())
+const activeClassName = `nav-active`
 const NavLink = styled(StyledLink).attrs({
    activeClassName
  })`

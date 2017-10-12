@@ -19,7 +19,7 @@ const NavBar = styled.div `
     display: none;
   `};
 `
-const activeClassName = btoa(Math.random())
+const activeClassName = `nav-active`
 const NavLink = styled(Link).attrs({
    activeClassName
  })`

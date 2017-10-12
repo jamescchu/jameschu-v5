@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { rhythm } from '../utils/typography'
 import { media } from '../utils/media'
 
-const activeClassName = btoa(Math.random())
+const activeClassName = `nav-active`
 const ContentContainer = styled.main.attrs({
    activeClassName
  })`

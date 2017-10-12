@@ -23,7 +23,7 @@ export default class HTML extends React.Component {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           {this.props.headComponents}
           <TypographyStyle typography={typography} />
-          <link rel="shortcut icon" href="/favicon.ico" />
+          <link rel="shortcut icon" href="/favicon.ico?v=2" />
           <link
             rel="apple-touch-icon"
             href="/favicons/favicon-120.png"

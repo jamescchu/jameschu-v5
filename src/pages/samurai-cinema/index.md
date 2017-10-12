@@ -9,7 +9,7 @@ client: ArtCenter College of Design
 website: na
 team: na
 awards: na
-draft: false
+draft: true
 info: true
 side: false
 ---

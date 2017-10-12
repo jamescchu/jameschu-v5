@@ -57,10 +57,10 @@ Interviews were conducted with fellow design students at ArtCenter to see what t
   - They care about balance between coming up with solutions on their own, and asking others. 
   - Access to quick feedback sessions are considered valuable. 
  
-###Feature List 
+<!-- ###Feature List 
 In order to not bloat the product with excessive features, I drafted a basic chart of features that we need and don't need. 
  
-`INSERT MUSCOW CHART` 
+`INSERT MUSCOW CHART`  -->
  
 ###User Flow 
 An initial layout of my platform was developed based on anticipated features that I have decided on in the previous section, this flow will evolve over time as the project progresses. 
@@ -94,7 +94,7 @@ The 3D Touch feature would later be ommited as I did not have a 3D Touch compati
 ##User Scenario 
 To better demonstrate how the app works and interacts, a short video was directed and filmed by myself to illustrate the various different devices and features that are used throughout a normal day. 
  
-`INSERT VIDEO HERE` 
+<!-- `INSERT VIDEO HERE`  -->
  
 ##Intermission 
 Faster forward some time, it was time to bring this a step further. With the concept and visual design laid out, it's time to iterate and refine it further. 

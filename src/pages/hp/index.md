@@ -18,6 +18,8 @@ side: true
 ##Overview 
 A course sponsored by HP exploring the future of computing technology. The project was done in teams consisting of individuals from various diciplines. Over the course of 14 weeks, we were to conceptualize, pitch, design and produce an ecosystem of both the physical product and accompanying digital interfaces/interactions. This course was done with the guidance of multiple professors from ArtCenter College of Design, as well as representatives and experts from HP.
 
+Knoq is a product that allows people to communicate by utilizing advance cameras and holographic technology, eliminating the need for users to mail or physically posess an item to examine.
+
 ###Confidentiality
 Due to the nature of this project, release of materials is still restricted and thus this study will only cover the process at a higher level and images recorded throughout.
 
@@ -34,6 +36,10 @@ With only 14 weeks, we had a tall order to deliver, however this is a general br
 - Pitch concepts based on research and field study.
 - Design both the physical product and accompanying interface.
 - Showcase how this will integrate in everyday life.
+
+<!-- ###Scenario Video
+To showcase how our product would be used in a day-to-day setting, we produced this short video. 
+<iframe src="https://player.vimeo.com/video/227992076" width="640" height="370" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
 
 ##Team
 We were assigned teams of 4 at the professor's discresion, and I would end up working with [Chloe Kim](http://chloekim.info/), Juno Park, Yidan Zhang. Based on our disciplines, we were split 2 Graphic Design Majors, and 2 Product Design Majors.

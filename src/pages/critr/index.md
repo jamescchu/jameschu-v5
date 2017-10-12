@@ -11,6 +11,8 @@ website: na
 team: na
 awards: ADAA 2017 Semifinalist — ArtCenter Student Gallery
 draft: false
+info: true
+side: true
 ---
 
 

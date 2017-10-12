@@ -4,7 +4,10 @@ import styled from 'styled-components'
 import { rhythm } from '../utils/typography'
 import { media } from '../utils/media'
 
-const ContentContainer = styled.main`
+const activeClassName = btoa(Math.random())
+const ContentContainer = styled.main.attrs({
+   activeClassName
+ })`
   max-width: initial;
   margin: 0 ${props => (props.isRoot ? 'auto' : rhythm(1))};
   ${media.desktop`

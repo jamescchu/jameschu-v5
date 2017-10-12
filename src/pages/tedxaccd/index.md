@@ -11,6 +11,8 @@ website: 2017.tedxaccd.com
 team: James Chu, Josephine Law, Yuma Naito
 awards: na
 draft: false
+info: true
+side: true
 ---
 
 ##Overview 

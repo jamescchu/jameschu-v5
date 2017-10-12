@@ -20,7 +20,6 @@ export default class Template extends React.Component {
     const { children, location } = this.props
 
     const isRoot = location.pathname === '/'
-    const isAbout = location.pathname === '/about'
 
     return (
       <div>
@@ -39,11 +38,11 @@ export default class Template extends React.Component {
           ]}
         />
         <Header />
-        <Navigation isRoot={isRoot} isAbout={isAbout} />
-        <Content isRoot={isRoot} Footer={Footer}>
+        <Navigation />
+        <Content isRoot={isRoot}>
           {children()}
         </Content>
-        <NavigationMobile isRoot={isRoot} isAbout={isAbout} />
+        <NavigationMobile/>
       </div>
     )
   }

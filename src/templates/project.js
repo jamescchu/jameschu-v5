@@ -39,26 +39,32 @@ const Content = styled.div`
 
 export default ({ data }) => {
   const post = data.markdownRemark
+  const showSideBar = post.frontmatter.side
+  const showInfo = post.frontmatter.info
   return (
     <section>
       <Helmet title={`James Chu - ${post.frontmatter.title}`} />
       <h1>
         {post.frontmatter.title}
       </h1>
-      <SideBar>
-        <SideBarList sections={post.frontmatter.sections} />
-      </SideBar>
+      { showSideBar &&
+        <SideBar>
+          <SideBarList sections={post.frontmatter.sections} />
+        </SideBar>
+      }
       <Content>
-        <PostInfo
-          project={post.frontmatter.title}
-          role={post.frontmatter.role}
-          date={post.frontmatter.time}
-          description={post.frontmatter.description}
-          website={post.frontmatter.website}
-          client={post.frontmatter.client}
-          team={post.frontmatter.team}
-          awards={post.frontmatter.awards}
-        />
+        { showInfo &&
+          <PostInfo
+            project={post.frontmatter.title}
+            role={post.frontmatter.role}
+            date={post.frontmatter.time}
+            description={post.frontmatter.description}
+            website={post.frontmatter.website}
+            client={post.frontmatter.client}
+            team={post.frontmatter.team}
+            awards={post.frontmatter.awards}
+          />
+        }
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </Content>
     </section>
@@ -66,7 +72,7 @@ export default ({ data }) => {
 }
 
 export const query = graphql`
-  query BlogPostQuery($slug: String!) {
+  query ProjectQuery($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
@@ -78,6 +84,8 @@ export const query = graphql`
         team
         client
         awards
+        info
+        side
       }
     }
   }

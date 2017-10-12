@@ -1,6 +1,6 @@
 ---
 title: HP Sponsored Project
-date: "2017-01-22T22:39:53.000Z"
+date: "2017-04-22T22:39:53.000Z"
 type: project
 tags: Restricted Project
 sections: overview, brief, goal, team, ideation-and-research, disaster, scenario, outcome
@@ -11,6 +11,8 @@ website: na
 team: James Chu, Chloe Kim, Juno Park, Yidan Zhang
 awards: na
 draft: false
+info: true
+side: true
 ---
 
 ##Overview 
@@ -24,7 +26,7 @@ Due to the nature of this project, release of materials is still restricted and 
 - Create an ecosystem of products integrating both industrial and interaction design.
 
 ##Goal 
-- Enhance the way we communicate with others.
+- Enhance the way we communicate with others when surrounding physical objects.
 
 ###Deliverables
 With only 14 weeks, we had a tall order to deliver, however this is a general breakdown:

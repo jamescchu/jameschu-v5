@@ -89,6 +89,12 @@ iframe {
 	padding-bottom: 20px;
 }
 
+blockquote {
+	font-style: italic;
+	font-weight: bold;
+	width: 80%;
+}
+
 ::-moz-selection {
 	background: black;
 	color: white;

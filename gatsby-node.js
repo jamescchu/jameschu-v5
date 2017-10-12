@@ -4,7 +4,6 @@ const path = require('path');
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
   const projectTemplate = path.resolve(`./src/templates/project.js`)
-  const pageTemplate = path.resolve(`./src/templates/page.js`)
   return new Promise((resolve, reject) => {
     graphql(`
       {
@@ -13,9 +12,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             node {
               fields {
                 slug
-              }
-              frontmatter {
-                type
               }
             }
           }
@@ -26,25 +22,14 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       const posts = result.data.allMarkdownRemark.edges;
 
       posts.map(({ node }) => {
-        if (node.frontmatter.type === "project" ) {
-          createPage({
-            path: node.fields.slug,
-            component: projectTemplate,
-            context: {
-              // Data passed to context is available in page queries as GraphQL variables.
-              slug: node.fields.slug,
-            },
-          })
-        } else {
-          createPage({
-            path: node.fields.slug,
-            component: pageTemplate,
-            context: {
-              // Data passed to context is available in page queries as GraphQL variables.
-              slug: node.fields.slug,
-            },
-          })
-        }
+        createPage({
+          path: node.fields.slug,
+          component: projectTemplate,
+          context: {
+            // Data passed to context is available in page queries as GraphQL variables.
+            slug: node.fields.slug,
+          },
+        })
       })
       resolve()
     })

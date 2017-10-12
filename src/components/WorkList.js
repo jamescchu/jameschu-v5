@@ -10,8 +10,6 @@ const ListContainer = styled.section`
   text-align: center;
   ${media.desktop`
     text-align: left;
-  `};
-  ${media.desktop`
     max-width: ${rhythm(30)};
   `};
   ${media.giant`

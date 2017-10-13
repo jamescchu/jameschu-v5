@@ -1,13 +1,22 @@
-# gatsby-starter-default
-The default Gatsby starter
+# james-chu.com
+The newest version of my portfolio using [Gatsby](https://www.gatsbyjs.org/) to learn some ReactJS.
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
+## Tech
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-example-site
-```
+- [Gatsby](https://www.gatsbyjs.org/)
+  - Awesome React-driven static site generator
+- [styled-components](https://www.styled-components.com/)
+  - "Visual primitives for the component age," used as a styling solution with CSS
+- [Markdown](https://en.wikipedia.org/wiki/Markdown)
+  - Each and every post is authored in Markdown parsed by [remark](http://remark.js.org/)
+
+## Development
+
+- Clone repo
+- `yarn` to install npm dependencies
+- Build with `gatsby develop`
 
 ## Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+- `gatsby build` to run production build
+- Outputs to `public/` folder

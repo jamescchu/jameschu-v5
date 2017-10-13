@@ -42,7 +42,7 @@ export default class Template extends React.Component {
         <Content isRoot={isRoot}>
           {children()}
         </Content>
-        <NavigationMobile/>
+        <NavigationMobile />
       </div>
     )
   }

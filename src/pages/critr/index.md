@@ -94,8 +94,6 @@ The 3D Touch feature would later be ommited as I did not have a 3D Touch compati
 ##User Scenario 
 To better demonstrate how the app works and interacts, a short video was directed and filmed by myself to illustrate the various different devices and features that are used throughout a normal day. 
  
-<!-- `INSERT VIDEO HERE`  -->
- 
 ##Intermission 
 Faster forward some time, it was time to bring this a step further. With the concept and visual design laid out, it's time to iterate and refine it further. 
  

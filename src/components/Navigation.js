@@ -24,8 +24,8 @@ const Nav = styled.nav`
 `
 const activeClassName = `nav-active`
 const NavLink = styled(StyledLink).attrs({
-   activeClassName
- })`
+  activeClassName,
+})`
   &::before {
     visibility: hidden;
     transform: scaleX(0);
@@ -57,7 +57,9 @@ const Navigation = ({}) =>
   <Nav>
     <NavLogo>
       <NavList>
-        <StyledLink exact activeClassName={activeClassName} to="/">James Chu</StyledLink>
+        <StyledLink exact activeClassName={activeClassName} to="/">
+          James Chu
+        </StyledLink>
       </NavList>
       <NavList>Product Designer</NavList>
     </NavLogo>

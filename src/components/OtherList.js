@@ -13,7 +13,7 @@ const ListContainer = styled.section`
     text-align: left;
     width: 48%;
   `};
-  
+
   &:nth-child(odd) {
     ${media.desktop`
       margin: 0;

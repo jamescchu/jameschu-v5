@@ -47,13 +47,12 @@ export default ({ data }) => {
       <h1>
         {post.frontmatter.title}
       </h1>
-      { showSideBar &&
+      {showSideBar &&
         <SideBar>
           <SideBarList sections={post.frontmatter.sections} />
-        </SideBar>
-      }
+        </SideBar>}
       <Content>
-        { showInfo &&
+        {showInfo &&
           <PostInfo
             project={post.frontmatter.title}
             role={post.frontmatter.role}
@@ -63,8 +62,7 @@ export default ({ data }) => {
             client={post.frontmatter.client}
             team={post.frontmatter.team}
             awards={post.frontmatter.awards}
-          />
-        }
+          />}
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </Content>
     </section>

@@ -6,8 +6,8 @@ import { media } from '../utils/media'
 
 const activeClassName = `nav-active`
 const ContentContainer = styled.main.attrs({
-   activeClassName
- })`
+  activeClassName,
+})`
   max-width: initial;
   margin: 0 ${props => (props.isRoot ? 'auto' : rhythm(1))};
   ${media.desktop`

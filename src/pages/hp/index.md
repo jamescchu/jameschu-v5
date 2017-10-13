@@ -92,8 +92,6 @@ We would ultimately lose approximately a week of progress to resolve this issue.
 ##Scenario
 To help us showcase a scenario in which our product can be utilized, we had to create a short film in order to communicate that. We distilled our goals and ideas down, alongside references from various inspirations to help us narrow down our scenario. The script would be written by me, and Chloe art directed the sequence.
 
-`INSERT STORYBOARD`
-
 ###Filming
 We hired a fellow ArtCenter Film Major student to help us direct and film our scenario video. Nick Wang would be our director for the sequence, along with 3 other students who assisted in camerawork and lighting. With the physical product finished just hours before the shoot, we would film 2 sessions over the course of 2 days.
 

@@ -18,6 +18,8 @@ As I work towards my BFA in Graphic Design for ArtCenter College of Design, I ha
 **Opportunities**  
 There’s always something new for me to explore, new people to meet, and new experiences to be had. Please feel free to [contact me](mailto:james@james-chu.com) for any opportunities, internships or positions alike.
 
+Resume available upon request.
+
 ###Understanding problems
 From the beginning, as a kid, puzzles such as the Rubix Cube were favorite toys of mine as solving difficult problems was something I always enjoyed _(I hate math though)_. This mentality carries on to this day, and new challenges only prove to be all the more exciting.
 

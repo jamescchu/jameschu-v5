@@ -2,7 +2,7 @@ import Typography from 'typography'
 import { MOBILE_MEDIA_QUERY } from 'typography-breakpoint-constants'
 
 const options = {
-  baseFontSize: '18px',
+  baseFontSize: '16px',
   baseLineHeight: 1.8,
   scaleRatio: 2.75,
   headerFontFamily: ['system-ui', 'Segoe UI', 'Tahoma', 'sans-serif'],
@@ -11,7 +11,7 @@ const options = {
     [MOBILE_MEDIA_QUERY]: {
       // Make baseFontSize on mobile 16px.
       html: {
-        fontSize: `16px`,
+        fontSize: `14px`,
       },
     },
     h3: {

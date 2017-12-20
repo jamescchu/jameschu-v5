@@ -6,7 +6,7 @@ type: project
 role: Product Design
 time: September 2017 – December 2017
 client: ArtCenter College of Design
-sections: overview, goals, focus, research, touchpoints, layout, visuals, interactions, final-design
+sections: overview, goals, focus, research, touchpoints, layout, visuals, interactions, end-product
 website: na
 team: na
 awards: na
@@ -173,27 +173,40 @@ I shot and recorded a video showcasing all the various screens and interactions 
 
 <iframe src="https://player.vimeo.com/video/247941810" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
+
 Every element is carefully crafted to animate in a natural and seamless sequence.
 
 <video width="100%" height="100%" loop="" autoplay="" playsinline="" class="fullView">
   <source src="/videos/subi-slide.mp4" type="video/mp4">
 </video>
 
+_^ Swipe to browse different items_
+  
+
 <video width="100%" height="100%" loop="" autoplay="" playsinline="" class="fullView">
   <source src="/videos/subi-expand.mp4" type="video/mp4">
 </video>
+
+_^ Expand more details by swiping up_
 
 <video width="100%" height="100%" loop="" autoplay="" playsinline="" class="fullView">
   <source src="/videos/subi-maps.mp4" type="video/mp4">
 </video>
 
+_^ Show/Hide location information_
+
 <video width="100%" height="100%" loop="" autoplay="" playsinline="" class="fullView">
   <source src="/videos/subi-favs.mp4" type="video/mp4">
 </video>
 
+_^ Simply swipe down to add an item to your favorites_
+
+
 <video width="100%" height="100%" loop="" autoplay="" playsinline="" class="fullView">
   <source src="/videos/subi-save.mp4" type="video/mp4">
 </video>
+
+_^ See what items you have saved_
 
 ###Framer 
 A large portion of the app flow and interactions were created in a single Framer project. By utilizing Framer's new Design feature, I was able to create and reuse components by templating information within it from a .json file. What this means is I can create as many pages/items as I want just from adding items to a .json file instead of designing different screens with different information. This allows for every single card you see in the main carousel to have its own detailed information page and I can add more just as easily.
@@ -204,5 +217,11 @@ A large portion of the app flow and interactions were created in a single Framer
 
 Access to a version of the Framer prototype available upon request.
 
-##Final Design
+##End Product
+###How it all works
+The system is designed to be completely user-generated content. With user's contributing to uploading photo's of their meals, and recieving the same thing from others. Thanks to machine-learning, if we treat a person's selection of passes and favorites as data, we can understand more about the user and their tastes, and suggest items that other people of similar taste enjoy, along with a few surprises if necessary.
+![System Design](/images/s-system.png)
+
+###Final Design
+The final design cover's most of the primary use case and scenario's for Subi. By constantly revisiting the scope and goals of the product, I was able to contain much of the experience in a very small amount of screens by enhancing the value of each respectively. Thanks to the research and planning done ahead, many of the screens and features not shown here already have most of their framework planned out and should be completed over the New Year's break.
 ![Final Design](/images/s-design.jpg)

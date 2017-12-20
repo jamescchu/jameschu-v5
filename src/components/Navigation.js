@@ -61,7 +61,7 @@ const Navigation = ({}) =>
           James Chu
         </StyledLink>
       </NavList>
-      <NavList>Product Designer</NavList>
+      <NavList>Digital Product Designer</NavList>
     </NavLogo>
     <NavSections>
       <NavList>

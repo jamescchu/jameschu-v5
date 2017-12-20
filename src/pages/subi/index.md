@@ -22,11 +22,14 @@ The appearance of food heavily in uences our perception of a tasty meal, and Sub
 
 With each individual item of a restaurant’s menu presented seperately, you can more accurately judge your own appetite, instead of vague expectations.
 
-<!-- ![Final Design](/images/s-products.jpg) -->
+![Final Design](/images/s-products.jpg)
+
 ###Design Scenario
 Below is a design scenario directed, shot and editted by myself with Rose as my lovely model. Key points of experiences is to understand that the interactions with the product is primarily designed to be used before and after a meal. This allows for an interference free dining experience for the user which is something I wanted to respect.
 
 <iframe src="https://player.vimeo.com/video/247934852" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+[See the entire interactive flow here.](#interactions)
 
 
 ##Goals 
@@ -163,7 +166,27 @@ I shot and recorded a video showcasing all the various screens and interactions 
 
 <iframe src="https://player.vimeo.com/video/247941810" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-_I have new found respect for understanding just how difficult shooting a video like this is._
+Every element is carefully crafted to animate in a natural and seamless sequence.
+
+<video width="100%" height="100%" loop="" autoplay="" playsinline="" class="fullView">
+  <source src="/videos/subi-slide.mp4" type="video/mp4">
+</video>
+
+<video width="100%" height="100%" loop="" autoplay="" playsinline="" class="fullView">
+  <source src="/videos/subi-expand.mp4" type="video/mp4">
+</video>
+
+<video width="100%" height="100%" loop="" autoplay="" playsinline="" class="fullView">
+  <source src="/videos/subi-maps.mp4" type="video/mp4">
+</video>
+
+<video width="100%" height="100%" loop="" autoplay="" playsinline="" class="fullView">
+  <source src="/videos/subi-favs.mp4" type="video/mp4">
+</video>
+
+<video width="100%" height="100%" loop="" autoplay="" playsinline="" class="fullView">
+  <source src="/videos/subi-save.mp4" type="video/mp4">
+</video>
 
 ###Framer 
 A large portion of the app flow and interactions were created in a single Framer project. By utilizing Framer's new Design feature, I was able to create and reuse components by templating information within it from a .json file. What this means is I can create as many pages/items as I want just from adding items to a .json file instead of designing different screens with different information. This allows for every single card you see in the main carusel to have it's own detailed information page and I can add more just as easily.
